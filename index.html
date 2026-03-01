@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Sacco Cricket - Mhenga</title>
+    
+    <!-- Social Media Preview Meta Tags -->
+    <meta property="og:title" content="Casino Sacco Cricket - Mhenga">
+    <meta property="og:description" content="C for Cricket, C for Chelsea. The official profile of the World Champion Mhenga.">
+    <meta property="og:image" content="https://cdn.wallpapersafari.com/93/89/d2CLmo.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Casino Sacco Cricket - Mhenga">
+    <meta name="twitter:description" content="The Legend of Mhenga: Cricket, Chelsea, and Mombasa vibes.">
+    <meta name="twitter:image" content="https://cdn.wallpapersafari.com/93/89/d2CLmo.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+
+        .tab-btn.active {
+            background-color: #3b82f6;
+            color: white;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .profile-ring {
+            position: relative;
+            padding: 4px;
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            border-radius: 50%;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center p-6 md:p-12">
+
+    <!-- Header Section -->
+    <header class="text-center mb-10">
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-8">
+            Casino Sacco Cricket
+        </h1>
+        
+        <div class="flex flex-col items-center">
+            <div class="profile-ring mb-4">
+                <img 
+                    src="https://scontent.fnbo10-1.fna.fbcdn.net/v/t1.6435-1/75266073_2817079551733637_2797774398495391744_n.jpg?stp=c0.256.1536.1536a_dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeES4TlcfEhO1H6MRoPZQIeLhJo4ZPuWdi6Emjhk-5Z2LvEBJJWWqiMAy1330xkY7fz6YLsnBPHvTs_QEyMxpTA0&_nc_ohc=2bmtdnUWCn4Q7kNvwGkQb0p&_nc_oc=AdkbX-MQrkZSdARbg3--LmRwySIl5acpRQM19w3Lj_H4SpPnsATn32c96mZMM7bwJGs&_nc_pt=5&_nc_zt=24&_nc_ht=scontent.fnbo10-1.fna&_nc_gid=H0S2_vk3RWNtIoPXwvj1aw&_nc_ss=8&oh=00_Afsa-AwE-PV2oWDaYSVdSqjuaQnDCt_FPn1H3cO6rdg9NQ&oe=69CBF37D" 
+                    alt="Mhenga Profile" 
+                    class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-slate-800 object-cover border-2 border-white/20"
+                    onerror="this.src='https://via.placeholder.com/150?text=Mhenga'"
+                >
+            </div>
+            <h2 class="text-2xl font-bold mb-1">Mhenga</h2>
+            <p class="text-blue-300 font-medium italic">C for Cricket, C for Chelsea</p>
+        </div>
+    </header>
+
+    <!-- Tabs Navigation -->
+    <div class="w-full max-w-2xl glass-card p-2 flex gap-2 mb-8">
+        <button onclick="openTab(event, 'about')" class="tab-btn active flex-1 py-3 px-4 rounded-xl font-semibold transition-all duration-300">About Mhenga</button>
+        <button onclick="openTab(event, 'tutorial')" class="tab-btn flex-1 py-3 px-4 rounded-xl font-semibold transition-all duration-300">Tutorial</button>
+        <button onclick="openTab(event, 'fixtures')" class="tab-btn flex-1 py-3 px-4 rounded-xl font-semibold transition-all duration-300">Fixtures</button>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="w-full max-w-2xl glass-card p-8 min-h-[300px]">
+        
+        <!-- About Tab -->
+        <section id="about" class="tab-content active">
+            <h3 class="text-xl font-bold mb-4 text-blue-400">The Legend</h3>
+            <p class="text-slate-300 leading-relaxed mb-6">
+                Mhenga is a notorious Chelsea fan, famous for his endless noise and dramatic celebrations. He proudly calls himself the “world champion,” though his real championship seems to be chasing women in Mombasa, just like he once did in Juja. 
+            </p>
+            <p class="text-slate-300 leading-relaxed mb-6">
+                Whether it’s football banter or bold stories, he never runs out of energy. Loud, confident, and slightly chaotic, Mhenga lives life at full volume. When Chelsea wins, the neighborhood knows. When they lose, excuses fly. Truly, <span class="text-purple-400 font-bold">shenzi sana</span>—but in his own unforgettable way. 
+            </p>
+            <p class="text-blue-300 font-bold text-lg mb-4 italic">
+                And now, he is officially a cricket player too. Mamaeeee!
+            </p>
+            <ul class="space-y-2 text-slate-400 border-t border-white/10 pt-4">
+                <li class="flex items-center gap-2">🏏 <span class="text-slate-200">Role:</span> Chaos Agent & Cricket Player</li>
+                <li class="flex items-center gap-2">⚽ <span class="text-slate-200">Allegiance:</span> Chelsea FC (World Champion)</li>
+                <li class="flex items-center gap-2">📍 <span class="text-slate-200">Location:</span> Mombasa (Ex-Juja Legend)</li>
+            </ul>
+        </section>
+
+        <!-- Tutorial Tab -->
+        <section id="tutorial" class="tab-content">
+            <h3 class="text-xl font-bold mb-6 text-blue-400">Cricket Mastery Tutorials</h3>
+            
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/NZGLHdcw2RM?si=oml0FGa1YizQkg1b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/wHEIT32ZEVs?si=5USZ2wIqBrxkpiEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/AqtpNkMvj5Y?si=IVd6gx8UQd-8uyjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Fixtures Tab -->
+        <section id="fixtures" class="tab-content">
+            <h3 class="text-xl font-bold mb-4 text-blue-400">April Schedule</h3>
+            <div class="overflow-hidden rounded-lg border border-white/10">
+                <table class="w-full text-left">
+                    <thead class="bg-white/10">
+                        <tr>
+                            <th class="p-3 text-sm font-semibold">Date</th>
+                            <th class="p-3 text-sm font-semibold">Match</th>
+                            <th class="p-3 text-sm font-semibold">Venue</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/5">
+                        <tr>
+                            <td class="p-3 text-sm text-slate-400">April 05</td>
+                            <td class="p-3 text-sm font-medium">Casino vs Mombasa Cricket</td>
+                            <td class="p-3 text-sm text-slate-400">Coastal Oval</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 text-sm text-slate-400">April 12</td>
+                            <td class="p-3 text-sm font-medium">Casino vs Wamama</td>
+                            <td class="p-3 text-sm text-slate-400">Mombasa Grounds</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 text-sm text-slate-400">April 19</td>
+                            <td class="p-3 text-sm font-medium">Casino vs Bonzo</td>
+                            <td class="p-3 text-sm text-slate-400">Casino Arena</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 text-sm text-slate-400">April 26</td>
+                            <td class="p-3 text-sm font-medium">Casino vs Ngulusumu</td>
+                            <td class="p-3 text-sm text-slate-400">The Stadium</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-4 text-xs text-center text-slate-500 italic">Matches occur weekly. Mamaeeee!</p>
+        </section>
+
+    </main>
+
+    <footer class="mt-12 text-slate-500 text-sm">
+        &copy; 2026 Casino Sacco Cricket. Created by Mhenga. Mamaeeee! (Malomba)
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
